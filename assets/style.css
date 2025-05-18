@@ -84,7 +84,13 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+  font-size: 1rem;
+
 }
+.about-me__picture {
+	width: 560px;
+}
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
@@ -242,6 +248,11 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.contrast {
+	color: #000;
+	background-color: white;
 }
 
 @media all and (max-width: 1180px) {

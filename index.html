@@ -26,25 +26,38 @@
 
 	<script type="application/ld+json">
 		{
-		  "@context": "https://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci Photographie",
-		  "image": "./assets/images/nina.webp",
-		  "url": "https://www.ninacarducci.com",
-		  "openingHoursSpecification": [
-			{
-				"@type": "OpeningHoursSpecification",
-				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-				"opens": "10:00",
-				"closes": "19:00"
-			}],
-		  "priceRange": "€€",
-		  "description": "Nina Carducci, photographe professionnelle en Île-de-France. Shooting photo, retouche et albums personnalisés."
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci Photographie",
+			"image": "./assets/images/nina.webp",
+			"url": "https://www.ninacarducci.com",
+			"telephone": "+33556677889",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 44.8465743,
+				"longitude": -0.6056758
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+					"opens": "10:00",
+					"closes": "19:00"
+				}],
+			"priceRange": "€€",
+			"description": "Nina Carducci, photographe professionnelle. Shooting photo, retouche et albums personnalisés."
 		}
 	</script>
 </head>
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci, photographe freelance</h1>
 	<div class="nav">   
 		<ul>
@@ -55,9 +68,8 @@
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram logo"></a></li>
 		</ul>
 	</div>
-</div>
+</header>
 <div id="header">
-
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -85,18 +97,18 @@
 		</button>
 	</div>
 </div>
-<div id="about">
+<section id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="Portrait of photographer Nina Carducci" class="about-me__picture">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h2 class="about-me__title">A propos de moi</h2>
+		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</section>
+<section id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -119,8 +131,8 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
 		<div class="service">
@@ -155,7 +167,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <div class="quote">
 	<figure>
 		<blockquote>
@@ -164,7 +176,7 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
-<div id="contact">
+<section id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
@@ -186,6 +198,6 @@
 			<img src="./assets/images/camera.webp" alt="Close up shot of a vintage camera">
 		</div>
 	</div>
-</div>
+</section>
 </body>
 </html>
